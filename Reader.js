@@ -7,7 +7,6 @@ class Reader {
         //
         this.reader = util.promisify(fs.readFile)
     }
-    //async/await precisa de try/catch
     async Read(filepath) {
         try {
             return await this.reader(filepath, 'utf8')
