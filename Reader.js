@@ -11,7 +11,7 @@ class Reader {
         try {
             return await this.reader(filepath, 'utf8')
         } catch (err) {
-            return "File not Found"
+            return err
         }
     }
 }
